@@ -1,5 +1,5 @@
 # autoScroll
-The autoScroll.js file contains all the code you need to automatically scroll to an element with vanilla javascript that works well across all devices for immediate auto scrolling to an element.
+The autoScroll.js file contains all the code you need to automatically scroll to an element with vanilla javascript. It works well across all devices.
 
 invoking it looks like:
 ```
