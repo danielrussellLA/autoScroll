@@ -24,15 +24,15 @@ function debounce(func, wait, immediate) {
 };
 
 function autoScroll(selector) {
-    let scrollAttempts = 0;
-    let incrementScrollAttempts = debounce(function() {
+    var scrollAttempts = 0;
+    var incrementScrollAttempts = debounce(function() {
         scrollAttempts++;
     });
 
     window.addEventListener('scroll', incrementScrollAttempts);
 
-    const el = document.querySelector(selector);
-    const chkReadyState = setInterval(function() {
+    var el = document.querySelector(selector);
+    var chkReadyState = setInterval(function() {
         if (el) {
             window.scrollTo(0, el.offsetTop);
         }
